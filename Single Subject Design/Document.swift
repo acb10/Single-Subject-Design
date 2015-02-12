@@ -14,7 +14,7 @@ class Document: NSPersistentDocument {
         super.init()
         // Add your subclass-specific initialization here.
         
-        //Testing repository one more time
+        //Testing repository again
     }
 
     override func windowControllerDidLoadNib(aController: NSWindowController) {
