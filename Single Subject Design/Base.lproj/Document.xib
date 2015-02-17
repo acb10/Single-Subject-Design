@@ -15,12 +15,12 @@
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="xOd-HO-29H" userLabel="Window">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="133" y="235" width="507" height="413"/>
+            <rect key="contentRect" x="133" y="235" width="587" height="478"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
             <value key="minSize" type="size" width="94" height="86"/>
             <view key="contentView" id="gIp-Ho-8D9">
-                <rect key="frame" x="0.0" y="0.0" width="507" height="413"/>
-                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <rect key="frame" x="0.0" y="0.0" width="587" height="478"/>
+                <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <tabView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mrS-ps-7dv">
                         <rect key="frame" x="-8" y="-10" width="603" height="482"/>
@@ -38,7 +38,6 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="jJB-0i-7pK" viewBased="YES" id="YXR-9h-ejH">
-                                                        <rect key="frame" x="0.0" y="0.0" width="238" height="117"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <size key="intercellSpacing" width="3" height="2"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -396,7 +395,7 @@
                                                                     </tableCellView>
                                                                 </prototypeCellViews>
                                                             </tableColumn>
-                                                            <tableColumn width="25" minWidth="10" maxWidth="3.4028234663852886e+38" id="pzX-hQ-xIW">
+                                                            <tableColumn width="80" minWidth="10" maxWidth="3.4028234663852886e+38" id="pzX-hQ-xIW">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -437,7 +436,7 @@
                                                 <rect key="frame" x="1" y="119" width="223" height="15"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
-                                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="4Ea-Xs-tGG">
+                                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="4Ea-Xs-tGG">
                                                 <rect key="frame" x="224" y="17" width="15" height="102"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
@@ -462,48 +461,51 @@
                     </tabView>
                 </subviews>
             </view>
+            <toolbar key="toolbar" implicitIdentifier="CD788EFA-ABF7-44AE-BE0E-00946C929969" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="LeJ-Ak-rJw">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="mWU-0D-5Px"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="Hmw-OU-Wxc"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="EIo-7A-zZd"/>
+                    <toolbarItem implicitItemIdentifier="E0DD19DA-2937-4074-9E09-1E5E03BD43EC" label="Add Person" paletteLabel="Add Person" tag="-1" id="wym-fs-3C9"/>
+                    <toolbarItem implicitItemIdentifier="DC1B8B07-BBC4-4AB1-92E3-A46477128280" label="Add Test" paletteLabel="Add Test" tag="-1" id="clz-RJ-xhq"/>
+                    <toolbarItem implicitItemIdentifier="65B3F09E-72BB-454F-83F7-2960F9AA3E64" label="Add Phase" paletteLabel="Add Phase" tag="-1" id="ePH-Q3-pxW"/>
+                    <toolbarItem implicitItemIdentifier="BB523950-E618-4C5E-8CD5-E7518059B807" label="Add Cell" paletteLabel="Add Cell" tag="-1" id="haK-eR-iWA"/>
+                    <toolbarItem implicitItemIdentifier="7998C11C-70B1-4AD1-8AFA-199A37C5D61F" label="Refresh" paletteLabel="Refresh" tag="-1" id="zUG-oD-irx"/>
+                    <toolbarItem implicitItemIdentifier="74A2FD48-51C9-4529-8632-F0FCBA695293" label="Sort" paletteLabel="Sort" tag="-1" id="M9W-8v-M6S"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="pd9-WG-TqV"/>
+                    <toolbarItem implicitItemIdentifier="37A066DD-CEED-40E2-BA55-980740C7489A" label="Export" paletteLabel="Export" tag="-1" id="V4T-ob-DHL"/>
+                    <toolbarItem implicitItemIdentifier="EFA32F8E-695F-44C0-8437-05F81CA63E23" label="Save" paletteLabel="Save" tag="-1" id="7Lz-Ci-mzu"/>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="mWU-0D-5Px"/>
+                    <toolbarItem reference="Hmw-OU-Wxc"/>
+                    <toolbarItem reference="wym-fs-3C9"/>
+                    <toolbarItem reference="clz-RJ-xhq"/>
+                    <toolbarItem reference="ePH-Q3-pxW"/>
+                    <toolbarItem reference="haK-eR-iWA"/>
+                    <toolbarItem reference="zUG-oD-irx"/>
+                    <toolbarItem reference="M9W-8v-M6S"/>
+                    <toolbarItem reference="pd9-WG-TqV"/>
+                    <toolbarItem reference="V4T-ob-DHL"/>
+                    <toolbarItem reference="7Lz-Ci-mzu"/>
+                    <toolbarItem reference="EIo-7A-zZd"/>
+                </defaultToolbarItems>
+            </toolbar>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-x8E"/>
             </connections>
-            <point key="canvasLocation" x="257.5" y="194.5"/>
+            <point key="canvasLocation" x="198.5" y="144"/>
         </window>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="fVv-9n-rd0">
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="QON-6V-2Lu">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="109" y="131" width="462" height="397"/>
+            <rect key="contentRect" x="109" y="132" width="480" height="270"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
-            <view key="contentView" id="ukc-7X-2eb">
-                <rect key="frame" x="0.0" y="0.0" width="462" height="397"/>
+            <view key="contentView" id="vjD-iq-MJY">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
             </view>
-            <point key="canvasLocation" x="865" y="257.5"/>
-        </window>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="rgS-RD-9iM">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="109" y="131" width="503" height="354"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
-            <view key="contentView" id="d3N-10-5U9">
-                <rect key="frame" x="0.0" y="0.0" width="503" height="354"/>
-                <autoresizingMask key="autoresizingMask"/>
-            </view>
-            <point key="canvasLocation" x="876.5" y="759"/>
-        </window>
-        <view id="T9P-Zx-tfD">
-            <rect key="frame" x="0.0" y="0.0" width="503" height="354"/>
-            <autoresizingMask key="autoresizingMask"/>
-            <point key="canvasLocation" x="869.5" y="230"/>
-        </view>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="A0V-Bg-r8Z">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="109" y="131" width="507" height="369"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
-            <view key="contentView" id="eZd-bp-J5q">
-                <rect key="frame" x="0.0" y="0.0" width="507" height="369"/>
-                <autoresizingMask key="autoresizingMask"/>
-            </view>
-            <point key="canvasLocation" x="874.5" y="242.5"/>
+            <point key="canvasLocation" x="768" y="174"/>
         </window>
     </objects>
 </document>
