@@ -7,6 +7,8 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="Document" customModule="Single_Subject_Design" customModuleProvider="target">
             <connections>
+                <outlet property="tabView" destination="mrS-ps-7dv" id="UPf-uq-xOh"/>
+                <outlet property="tableScrollView" destination="68e-mx-Adh" id="EIS-Vq-EA5"/>
                 <outlet property="window" destination="xOd-HO-29H" id="JIz-fz-R2o"/>
             </connections>
         </customObject>
@@ -23,10 +25,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <tabView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mrS-ps-7dv">
-                        <rect key="frame" x="-8" y="-10" width="603" height="482"/>
+                        <rect key="frame" x="-3" y="-4" width="603" height="482"/>
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
-                            <tabViewItem label="Tab" identifier="1" id="uPh-TH-Eud">
+                            <tabViewItem label="Data" identifier="1" id="uPh-TH-Eud">
                                 <view key="view" id="d4z-aM-mBL">
                                     <rect key="frame" x="10" y="33" width="583" height="436"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -627,20 +629,23 @@
                                     </subviews>
                                 </view>
                             </tabViewItem>
-                            <tabViewItem label="View" identifier="2" id="J43-2u-uhq">
+                            <tabViewItem label="Graph" identifier="2" id="J43-2u-uhq">
                                 <view key="view" id="roL-zd-AXo">
                                     <rect key="frame" x="10" y="33" width="583" height="436"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                             </tabViewItem>
                         </tabViewItems>
+                        <connections>
+                            <outlet property="delegate" destination="-2" id="5qf-Kw-uGJ"/>
+                        </connections>
                     </tabView>
                 </subviews>
             </view>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-x8E"/>
             </connections>
-            <point key="canvasLocation" x="201.5" y="206"/>
+            <point key="canvasLocation" x="236.5" y="172"/>
         </window>
     </objects>
 </document>
