@@ -10,22 +10,60 @@ import Cocoa
 
 class Document: NSPersistentDocument {
 
+    @IBOutlet weak var ToolBar: NSToolbar!
+    
+    @IBAction func AddPerson(sender: NSToolbarItem) {
+    }
+    
+    @IBAction func AddTest(sender: NSToolbarItem) {
+    }
+    
+    @IBAction func AddPhase(sender: NSToolbarItem) {
+    }
+    
+    @IBAction func AddCell(sender: NSToolbarItem) {
+    }
+    
+    @IBAction func Refresh(sender: NSToolbarItem) {
+    }
+    
+    @IBAction func Sort(sender: NSToolbarItem) {
+    }
+    
+    @IBAction func Export(sender: NSToolbarItem) {
+    }
+    
+    @IBAction func Save(sender: NSToolbarItem) {
+    }
+    
     override init() {
         super.init()
         // Add your subclass-specific initialization here.
         
         //Testing the repository for the last time
     }
+    
 
     override func windowControllerDidLoadNib(aController: NSWindowController) {
         super.windowControllerDidLoadNib(aController)
         // Add any code here that needs to be executed once the windowController has loaded the document's window.
+        ToolBar.allowsUserCustomization == false
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 
     override class func autosavesInPlace() -> Bool {
         return true
     }
-
+    
+    
     override var windowNibName: String? {
         // Returns the nib file name of the document
         // If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this property and override -makeWindowControllers instead.
