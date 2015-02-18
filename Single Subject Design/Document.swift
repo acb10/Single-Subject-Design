@@ -50,13 +50,6 @@ class Document: NSPersistentDocument, NSTabViewDelegate {
         ToolBar.allowsUserCustomization == false
         
         
-        
-        
-        
-        
-        
-        
-        
     }
 
     override class func autosavesInPlace() -> Bool {
@@ -82,6 +75,7 @@ class Document: NSPersistentDocument, NSTabViewDelegate {
                 //remove tool bar items
             default:
                 println("Something went wrong in selected tabs")
-        }
+                        
+            }
     }
 }
