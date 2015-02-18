@@ -8,6 +8,8 @@
         <customObject id="-2" userLabel="File's Owner" customClass="Document" customModule="Single_Subject_Design" customModuleProvider="target">
             <connections>
                 <outlet property="ToolBar" destination="LeJ-Ak-rJw" id="Nvv-Uj-kdU"/>
+                <outlet property="tabView" destination="mrS-ps-7dv" id="UPf-uq-xOh"/>
+                <outlet property="tableScrollView" destination="68e-mx-Adh" id="EIS-Vq-EA5"/>
                 <outlet property="window" destination="xOd-HO-29H" id="JIz-fz-R2o"/>
             </connections>
         </customObject>
@@ -708,7 +710,7 @@
             </connections>
             <point key="canvasLocation" x="503.5" y="2"/>
         </window>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="QON-6V-2Lu">
+            <point key="canvasLocation" x="503.5" y="2"/>
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="109" y="132" width="480" height="270"/>
