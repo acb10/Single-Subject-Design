@@ -10,30 +10,27 @@ import Cocoa
 
 class Document: NSPersistentDocument, NSTabViewDelegate {
 
-    @IBOutlet weak var ToolBar: NSToolbar!
+    @IBOutlet weak var toolBar: NSToolbar!
     
-    @IBAction func AddPerson(sender: NSToolbarItem) {
+    @IBAction func addPerson(sender: NSToolbarItem) {
     }
     
-    @IBAction func AddTest(sender: NSToolbarItem) {
+    @IBAction func addTest(sender: NSToolbarItem) {
     }
     
-    @IBAction func AddPhase(sender: NSToolbarItem) {
+    @IBAction func addPhase(sender: NSToolbarItem) {
     }
     
-    @IBAction func AddCell(sender: NSToolbarItem) {
+    @IBAction func addCell(sender: NSToolbarItem) {
     }
     
-    @IBAction func Refresh(sender: NSToolbarItem) {
+    @IBAction func refresh(sender: NSToolbarItem) {
     }
     
-    @IBAction func Sort(sender: NSToolbarItem) {
+    @IBAction func export(sender: NSToolbarItem) {
     }
     
-    @IBAction func Export(sender: NSToolbarItem) {
-    }
-    
-    @IBAction func Save(sender: NSToolbarItem) {
+    @IBAction func save(sender: NSToolbarItem) {
     }
     
     override init() {
@@ -47,7 +44,7 @@ class Document: NSPersistentDocument, NSTabViewDelegate {
     override func windowControllerDidLoadNib(aController: NSWindowController) {
         super.windowControllerDidLoadNib(aController)
         // Add any code here that needs to be executed once the windowController has loaded the document's window.
-        ToolBar.allowsUserCustomization == false
+        toolBar.allowsUserCustomization == false
         
         
     }
