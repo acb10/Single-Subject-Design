@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
@@ -7,7 +7,6 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="Document" customModule="Single_Subject_Design" customModuleProvider="target">
             <connections>
-                <outlet property="ToolBar" destination="LeJ-Ak-rJw" id="Nvv-Uj-kdU"/>
                 <outlet property="tabView" destination="mrS-ps-7dv" id="UPf-uq-xOh"/>
                 <outlet property="tableScrollView" destination="68e-mx-Adh" id="EIS-Vq-EA5"/>
                 <outlet property="window" destination="xOd-HO-29H" id="JIz-fz-R2o"/>
@@ -19,7 +18,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="133" y="235" width="587" height="478"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
             <value key="minSize" type="size" width="94" height="86"/>
             <view key="contentView" id="gIp-Ho-8D9">
                 <rect key="frame" x="0.0" y="0.0" width="587" height="478"/>
@@ -618,7 +617,7 @@
                                                 <rect key="frame" x="1" y="119" width="223" height="15"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
-                                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="4Ea-Xs-tGG">
+                                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="4Ea-Xs-tGG">
                                                 <rect key="frame" x="224" y="17" width="15" height="102"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
@@ -643,83 +642,10 @@
                     </tabView>
                 </subviews>
             </view>
-            <toolbar key="toolbar" implicitIdentifier="CD788EFA-ABF7-44AE-BE0E-00946C929969" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="LeJ-Ak-rJw">
-                <allowedToolbarItems>
-                    <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="mWU-0D-5Px"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="Hmw-OU-Wxc"/>
-                    <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="EIo-7A-zZd"/>
-                    <toolbarItem implicitItemIdentifier="E0DD19DA-2937-4074-9E09-1E5E03BD43EC" label="Add Person" paletteLabel="Add Person" tag="-1" id="wym-fs-3C9">
-                        <connections>
-                            <action selector="AddPerson:" target="-2" id="Egh-eQ-Oid"/>
-                        </connections>
-                    </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="DC1B8B07-BBC4-4AB1-92E3-A46477128280" label="Add Test" paletteLabel="Add Test" tag="-1" id="clz-RJ-xhq">
-                        <connections>
-                            <action selector="AddTest:" target="-2" id="uN5-M1-Szg"/>
-                        </connections>
-                    </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="65B3F09E-72BB-454F-83F7-2960F9AA3E64" label="Add Phase" paletteLabel="Add Phase" tag="-1" id="ePH-Q3-pxW">
-                        <connections>
-                            <action selector="AddPhase:" target="-2" id="iEe-W3-sN1"/>
-                        </connections>
-                    </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="BB523950-E618-4C5E-8CD5-E7518059B807" label="Add Cell" paletteLabel="Add Cell" tag="-1" id="haK-eR-iWA">
-                        <connections>
-                            <action selector="AddCell:" target="-2" id="Hzx-rk-tzi"/>
-                        </connections>
-                    </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="7998C11C-70B1-4AD1-8AFA-199A37C5D61F" label="Refresh" paletteLabel="Refresh" tag="-1" id="zUG-oD-irx">
-                        <connections>
-                            <action selector="Refresh:" target="-2" id="G9X-Wq-XsL"/>
-                        </connections>
-                    </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="74A2FD48-51C9-4529-8632-F0FCBA695293" label="Sort" paletteLabel="Sort" tag="-1" id="M9W-8v-M6S">
-                        <connections>
-                            <action selector="Sort:" target="-2" id="iC9-OO-EBW"/>
-                        </connections>
-                    </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="pd9-WG-TqV"/>
-                    <toolbarItem implicitItemIdentifier="37A066DD-CEED-40E2-BA55-980740C7489A" label="Export" paletteLabel="Export" tag="-1" id="V4T-ob-DHL">
-                        <connections>
-                            <action selector="Export:" target="-2" id="i9y-Db-7fO"/>
-                        </connections>
-                    </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="EFA32F8E-695F-44C0-8437-05F81CA63E23" label="Save" paletteLabel="Save" tag="-1" id="7Lz-Ci-mzu">
-                        <connections>
-                            <action selector="Save:" target="-2" id="a6K-w0-rrs"/>
-                        </connections>
-                    </toolbarItem>
-                </allowedToolbarItems>
-                <defaultToolbarItems>
-                    <toolbarItem reference="mWU-0D-5Px"/>
-                    <toolbarItem reference="Hmw-OU-Wxc"/>
-                    <toolbarItem reference="wym-fs-3C9"/>
-                    <toolbarItem reference="clz-RJ-xhq"/>
-                    <toolbarItem reference="ePH-Q3-pxW"/>
-                    <toolbarItem reference="haK-eR-iWA"/>
-                    <toolbarItem reference="zUG-oD-irx"/>
-                    <toolbarItem reference="M9W-8v-M6S"/>
-                    <toolbarItem reference="pd9-WG-TqV"/>
-                    <toolbarItem reference="V4T-ob-DHL"/>
-                    <toolbarItem reference="7Lz-Ci-mzu"/>
-                    <toolbarItem reference="EIo-7A-zZd"/>
-                </defaultToolbarItems>
-            </toolbar>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-x8E"/>
             </connections>
-            <point key="canvasLocation" x="503.5" y="2"/>
-        </window>
-            <point key="canvasLocation" x="503.5" y="2"/>
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="109" y="132" width="480" height="270"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
-            <view key="contentView" id="vjD-iq-MJY">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                <autoresizingMask key="autoresizingMask"/>
-            </view>
-            <point key="canvasLocation" x="471" y="60"/>
+            <point key="canvasLocation" x="236.5" y="172"/>
         </window>
     </objects>
 </document>
