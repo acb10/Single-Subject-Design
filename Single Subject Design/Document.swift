@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class Document: NSPersistentDocument {
+class Document: NSPersistentDocument, NSTabViewDelegate {
 
     @IBOutlet weak var ToolBar: NSToolbar!
     
@@ -70,4 +70,18 @@ class Document: NSPersistentDocument {
         return "Document"
     }
 
+    
+    
+    func tabView(tabView: NSTabView, didSelectTabViewItem tabViewItem: NSTabViewItem?) {
+        switch tabViewItem?.label as String!{
+            case "Data":
+                //reinstate visible tool bar items
+                println("Switched to Tab 1")
+            case "Graph":
+                println("Switched to Tab 2")
+                //remove tool bar items
+            default:
+                println("Something went wrong in selected tabs")
+        }
+    }
 }
