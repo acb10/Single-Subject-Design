@@ -10,15 +10,15 @@ import Cocoa
 
 class Document: NSPersistentDocument, NSTabViewDelegate {
 
-    @IBOutlet weak var ToolBar: NSToolbar!
+    @IBOutlet weak var toolBar: NSToolbar!
     
-    @IBAction func AddPerson(sender: NSToolbarItem) {
+    @IBAction func addPerson(sender: NSToolbarItem) {
     }
     
-    @IBAction func AddTest(sender: NSToolbarItem) {
+    @IBAction func addTest(sender: NSToolbarItem) {
     }
     
-    @IBAction func AddPhase(sender: NSToolbarItem) {
+    @IBAction func addPhase(sender: NSToolbarItem) {
     }
     
     @IBAction func AddCell(sender: NSToolbarItem) {
@@ -47,7 +47,7 @@ class Document: NSPersistentDocument, NSTabViewDelegate {
     override func windowControllerDidLoadNib(aController: NSWindowController) {
         super.windowControllerDidLoadNib(aController)
         // Add any code here that needs to be executed once the windowController has loaded the document's window.
-        ToolBar.allowsUserCustomization == false
+        toolBar.allowsUserCustomization == false
         
         
     }
@@ -69,6 +69,9 @@ class Document: NSPersistentDocument, NSTabViewDelegate {
         switch tabViewItem?.label as String!{
             case "Data":
                 //reinstate visible tool bar items
+                //var arr = toolBar.items
+                //toolBar.items.filter { $0 }
+                //toolBar.items = arr.filter { $0 % 2 == 0 }
                 println("Switched to Tab 1")
             case "Graph":
                 println("Switched to Tab 2")
