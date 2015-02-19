@@ -21,19 +21,16 @@ class Document: NSPersistentDocument, NSTabViewDelegate {
     @IBAction func addPhase(sender: NSToolbarItem) {
     }
     
-    @IBAction func AddCell(sender: NSToolbarItem) {
+    @IBAction func addCell(sender: NSToolbarItem) {
     }
     
-    @IBAction func Refresh(sender: NSToolbarItem) {
+    @IBAction func refresh(sender: NSToolbarItem) {
     }
     
-    @IBAction func Sort(sender: NSToolbarItem) {
+    @IBAction func export(sender: NSToolbarItem) {
     }
     
-    @IBAction func Export(sender: NSToolbarItem) {
-    }
-    
-    @IBAction func Save(sender: NSToolbarItem) {
+    @IBAction func save(sender: NSToolbarItem) {
     }
     
     override init() {
