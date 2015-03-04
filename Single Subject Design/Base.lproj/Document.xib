@@ -31,10 +31,11 @@
                         <tabViewItems>
                             <tabViewItem label="Data" identifier="1" id="uPh-TH-Eud">
                                 <view key="view" id="d4z-aM-mBL">
+                                    <rect key="frame" x="10" y="33" width="583" height="436"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68e-mx-Adh">
-                                            <rect key="frame" x="17" y="-78" width="547" height="75"/>
+                                            <rect key="frame" x="17" y="358" width="547" height="75"/>
                                             <clipView key="contentView" misplaced="YES" id="u5f-0A-uLI">
                                                 <rect key="frame" x="1" y="17" width="238" height="117"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
