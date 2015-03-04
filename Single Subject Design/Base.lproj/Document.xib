@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
@@ -19,7 +19,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="133" y="235" width="587" height="478"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
             <value key="minSize" type="size" width="94" height="86"/>
             <view key="contentView" id="gIp-Ho-8D9">
                 <rect key="frame" x="0.0" y="0.0" width="587" height="478"/>
@@ -31,11 +31,10 @@
                         <tabViewItems>
                             <tabViewItem label="Data" identifier="1" id="uPh-TH-Eud">
                                 <view key="view" id="d4z-aM-mBL">
-                                    <rect key="frame" x="10" y="33" width="583" height="436"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68e-mx-Adh">
-                                            <rect key="frame" x="17" y="358" width="547" height="75"/>
+                                            <rect key="frame" x="17" y="-78" width="547" height="75"/>
                                             <clipView key="contentView" misplaced="YES" id="u5f-0A-uLI">
                                                 <rect key="frame" x="1" y="17" width="238" height="117"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -649,37 +648,37 @@
                     <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="Snt-Fb-2jt"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="rga-HH-Ie0"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="sae-rS-ExC"/>
-                    <toolbarItem implicitItemIdentifier="DDAF2E48-E402-4C2B-AF59-719EE44CBA24" label="Add Person" paletteLabel="Add Person" tag="-1" id="axP-XK-b5X">
+                    <toolbarItem implicitItemIdentifier="DDAF2E48-E402-4C2B-AF59-719EE44CBA24" explicitItemIdentifier="addPerson" label="Add Person" paletteLabel="Add Person" tag="2" id="axP-XK-b5X">
                         <connections>
                             <action selector="addPerson:" target="-2" id="2H2-an-pDK"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="7F8CE177-DF5A-4F2A-9030-AE60205128AE" label="Add Test" paletteLabel="Add Test" tag="-1" id="CP1-8K-sqm">
+                    <toolbarItem implicitItemIdentifier="7F8CE177-DF5A-4F2A-9030-AE60205128AE" explicitItemIdentifier="addTest" label="Add Test" paletteLabel="Add Test" tag="2" id="CP1-8K-sqm">
                         <connections>
                             <action selector="addTest:" target="-2" id="ea9-c7-Yob"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="F58775B2-0ADA-4D7F-89F8-9FD958BAC138" label="Add Phase" paletteLabel="Add Phase" tag="-1" id="0pu-ah-nuV">
+                    <toolbarItem implicitItemIdentifier="F58775B2-0ADA-4D7F-89F8-9FD958BAC138" explicitItemIdentifier="addPhase" label="Add Phase" paletteLabel="Add Phase" tag="2" id="0pu-ah-nuV">
                         <connections>
                             <action selector="addPhase:" target="-2" id="hrN-LV-fGb"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="1175A6F4-2B98-44FD-A987-10CAC988DD2F" label="Add Cell" paletteLabel="Add Cell" tag="-1" id="48m-CK-aOw">
+                    <toolbarItem implicitItemIdentifier="1175A6F4-2B98-44FD-A987-10CAC988DD2F" explicitItemIdentifier="addCell" label="Add Cell" paletteLabel="Add Cell" tag="2" id="48m-CK-aOw">
                         <connections>
                             <action selector="addCell:" target="-2" id="HEG-9t-ZTb"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="7DC838F2-58B8-4B42-AF49-858F3661E231" label="Refresh" paletteLabel="Refresh" tag="-1" id="ciD-zQ-jc6">
+                    <toolbarItem implicitItemIdentifier="7DC838F2-58B8-4B42-AF49-858F3661E231" explicitItemIdentifier="refresh" label="Refresh" paletteLabel="Refresh" tag="-1" id="ciD-zQ-jc6">
                         <connections>
                             <action selector="refresh:" target="-2" id="zRs-gf-Y8w"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="D78DF4F5-35F1-4E28-84F9-EE257F760E1B" label="Export" paletteLabel="Export" tag="-1" id="xe7-a8-egJ">
+                    <toolbarItem implicitItemIdentifier="D78DF4F5-35F1-4E28-84F9-EE257F760E1B" explicitItemIdentifier="export" label="Export" paletteLabel="Export" tag="-1" id="xe7-a8-egJ">
                         <connections>
                             <action selector="export:" target="-2" id="vcQ-dY-J7P"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="8FCA02BB-ADAA-4220-B9BE-085DC449A4B5" label="Save" paletteLabel="Save" tag="-1" id="Rxx-aY-Wl0">
+                    <toolbarItem implicitItemIdentifier="8FCA02BB-ADAA-4220-B9BE-085DC449A4B5" explicitItemIdentifier="save" label="Save" paletteLabel="Save" tag="-1" id="Rxx-aY-Wl0">
                         <connections>
                             <action selector="save:" target="-2" id="E73-b0-muf"/>
                         </connections>
@@ -698,6 +697,9 @@
                     <toolbarItem reference="Rxx-aY-Wl0"/>
                     <toolbarItem reference="rga-HH-Ie0"/>
                 </defaultToolbarItems>
+                <connections>
+                    <outlet property="delegate" destination="-2" id="veV-nG-ZWw"/>
+                </connections>
             </toolbar>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-x8E"/>

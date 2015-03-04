@@ -9,7 +9,10 @@
 import Cocoa
 
 class Document: NSPersistentDocument, NSTabViewDelegate {
-
+    
+    var rememberToolItems = [NSToolbarItem]()
+    var toolBarIDs = ["addPerson","addTest","addPhase","addCell","refresh","export","save"]
+    
     @IBOutlet weak var toolBar: NSToolbar!
     
     @IBAction func addPerson(sender: NSToolbarItem) {
@@ -45,8 +48,7 @@ class Document: NSPersistentDocument, NSTabViewDelegate {
         super.windowControllerDidLoadNib(aController)
         // Add any code here that needs to be executed once the windowController has loaded the document's window.
         toolBar.allowsUserCustomization == false
-        
-        
+        rememberToolItems = toolBar.visibleItems! as [NSToolbarItem]
     }
 
     override class func autosavesInPlace() -> Bool {
@@ -59,23 +61,47 @@ class Document: NSPersistentDocument, NSTabViewDelegate {
         // If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this property and override -makeWindowControllers instead.
         return "Document"
     }
-
-    
     
     func tabView(tabView: NSTabView, didSelectTabViewItem tabViewItem: NSTabViewItem?) {
         switch tabViewItem?.label as String!{
+            
+            
+            
+            
+            //Filter doesn't work, remove object at index __ is our only choice for removal
+            //Can only add using insert item with string identifier
+            //Should we make an identifier for all tools we've made?
+            
+            
+            
+            
             case "Data":
                 //reinstate visible tool bar items
-                //var arr = toolBar.items
-                //toolBar.items.filter { $0 }
-                //toolBar.items = arr.filter { $0 % 2 == 0 }
                 println("Switched to Tab 1")
+                //toolBar.visibleItems!.filter {$0.tag() == 2}
+            
+            
+//                for(var i=0; i<toolBar.items.count; i++) {
+//                    if toolBar.items[i].tag() == 2 {
+//                        toolBar.removeItemAtIndex(i)
+//                    }
+//                }
+            
             case "Graph":
-                println("Switched to Tab 2")
                 //remove tool bar items
+                
+//                for(var i=0; i<toolBarIDs.count; i++) {
+//                    toolBar.insertItemWithItemIdentifier(toolBarIDs[i], atIndex: i+2)
+//                }
+                println("Switched to Tab 2")
+            
+            
+                //toolBar.visi = rememberToolItems
+                //toolBar.visibleItems!.filter {$0.tag() != 2}
+            
             default:
                 println("Something went wrong in selected tabs")
-                        
+                
             }
     }
 }
